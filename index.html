@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CS 269 Final Project</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <main>
-      <h1>Classifying Wildfires in Satellite Imagery</h1>
-      <h2>Connor Couture, Shirley Qi, Joseph Wong</h2>
-      <p>
-        As the impacts of climate change begin to be felt, wildfires have become
-        a regular occurrence all over the world. With wildfires becoming more
-        common, it is important to have an efficient and accurate way to
-        identify the areas burned by wildfires. With satellite data widely
-        available in today's world, there is now enough data to train a model to
-        identify these areas. Using the Satellite Burned Area Dataset, we
-        trained several models to identify areas from satellite images which
-        have burn scars from recent wildfires. The UNet architecture
-        (implemented in PyTorch) is one of the top models for medical image
-        segmentation, so this was one of the models we decided to experiment on
-        for this dataset. Some other models we trained on this dataset include a
-        fine-tuned version of Meta's Segment Anything model, and FastAI model.
-      </p>
-      <h3>Link to report:</h3>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CS 269 Final Project</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <main>
+    <h1>Classifying Wildfires in Satellite Imagery</h1>
+    <h2>Connor Couture, Shirley Qi, Joseph Wong</h2>
+    <p>
+      As the impacts of climate change begin to be felt, wildfires have become
+      a regular occurrence all over the world. With wildfires becoming more
+      common, it is important to have an efficient and accurate way to
+      identify the areas burned by wildfires. With satellite data widely
+      available in today's world, there is now enough data to train a model to
+      identify these areas. Using the Satellite Burned Area Dataset, we
+      trained several models to identify areas from satellite images which
+      have burn scars from recent wildfires. The UNet architecture
+      (implemented in PyTorch) is one of the top models for medical image
+      segmentation, so this was one of the models we decided to experiment on
+      for this dataset. Some other models we trained on this dataset include a
+      fine-tuned version of Meta's Segment Anything model, and FastAI model.
+    </p>
+    <h3>Links:</h3>
+    <ul>
+      <li><a href="https://drive.google.com/drive/folders/1QG-EPFF6ZquQdqQgPywNVHM6aVUx_UaR">Source code</a></li>
+      <li><a href=""> Report</a></li>
+    </ul>
+    <h3>Credits:</h3>
+    <p>
+      The dataset used is the <a href="https://zenodo.org/records/6597139">Satellite Burned Area Dataset</a>, with
+      source code for unpacking the data for training the model pulled from 
+      <a href="https://github.com/lccol/burned-area-baseline">this GitHub repository</a>. We modified some of the code
+      of loading the dataset to customize the dataset for our specific use-case. The UNet architecture was implemented
+      in <a href="https://pytorch.org/">PyTorch</a> based on the UNet architecture described in 
+      <a href="https://arxiv.org/pdf/1505.04597">this paper</a>.
+    </p>
+  </main>
+</body>
+
 </html>
